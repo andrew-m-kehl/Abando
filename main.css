@@ -164,16 +164,16 @@
     padding:2px;
   }
   
-  .poster{
+  poster{
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
     margin:0;
     padding:0;
   }
-  .poster img {width:250px;}
+  poster img {width:250px;}
   
-  .poster figure{
+  poster figure{
     background-color:var(--DarkBlue);
     margin:.5%;
     padding:.5%;  
