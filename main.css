@@ -1,0 +1,312 @@
+/*Import Normalize.*/
+/* @import-normalize; */
+
+/*Import Google Fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+
+
+:root {
+  /*Custom Color Names*/
+    --DarkBlue:#00000A;
+    --DeepBlue:#224D73;   
+    --DeepGrey:#C4E1F2;
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    /*background-image:URL('images/abandogcity.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;*/
+    
+    /*Text*/
+    color: var(--DeepGrey); 
+    background-color:var(--DeepBlue);
+    font-family: 'Neuton', serif;  /* Define with at least one font name and its related generic family name.*/
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin: 30px 30px;
+    padding: 0 5%;
+    max-width: 100%;
+  }
+  /*  ----- Page layout blocks -----  */
+    
+  header {
+    color:var(--DeepGrey);
+    background-color:var(--DarkBlue);
+    display:flex; 
+    justify-content:space-around;  
+    border:5px solid red;
+    border-radius: 20px 20px 20px 20px;
+    padding:0 25%;
+  }
+  
+    header img {
+    height: 75px;
+    border:5px solid red;
+    border-radius: 20px 20px 20px 20px;
+  }
+  footer {
+    color:var(--DeepGrey);
+    background-color:var(--DarkBlue);
+    display:flex;
+    justify-content:space-around; 
+    border:5px solid red;
+    border-radius:10px 10px 10px 10px;
+    }
+  main {}
+  section {}
+
+  article {}
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  
+
+  /* ----- Navigation ----- Override text links for navigation only.*/ 
+  nav {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center; padding:1%;margin:0;
+    max-width: 100%;
+    text-decoration:none;
+  }
+    
+  nav.global a{
+    color:var(--DeepGrey);   
+    background-color:var(--DarkBlue); 
+    border:5px solid red;
+    border-radius:10px 10px 10px 10px;
+    font-size:1.1em;
+    font-weight:bold;
+    line-height:1.5;
+    margin:10px;
+    padding:5px 10px 5px 10px;
+    vertical-align: middle;
+    text-decoration:none;
+  }
+  
+  nav.global a:hover {
+    color:greenyellow;
+    background-color:var(--BlueGrey); 
+    border:5px solid greenyellow;
+    border-radius:10px 10px 10px 10px;
+  }
+  
+  nav.local{
+    margin:0;
+    padding:1%;
+    line-height:1;
+    text-align:center;    
+    background-color:transparent;
+  }
+  
+  nav.local a{
+    color:var(--DeepGrey);
+    background-color: transparent;
+    border-right:3px solid var(--DeepGrey);
+    border-left:3px solid var(--DeepGrey);
+    font-weight:bold;
+    margin-right:5px;
+    padding:3px 5px 3px 5px;
+    text-decoration:none;
+    vertical-align: middle;
+    text-align:center;
+  }
+  
+  nav.local a:hover {background-color:var(--DeepGrey); color:var(--SkyRed);}
+
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {color:red}
+  a:hover {color:greenyellow}
+  a:active {color:greenyellow}
+  a:visited {}
+  
+  /* -------Classes for Gallery Alignment*/
+   /*Programming Gallery Classes*/
+  .gallery{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin:0;
+    padding:0;
+  }
+  .gallery figure{
+    background-color:var(--DarkBlue);
+    width:500px;
+    margin:.5%;
+    padding:.5%;  
+    border:2px solid red;
+    margin:10px 15px 10px 10px;
+  }
+  .gallery iframe{
+    background-color:var(--DarkBlue);
+    width:500px;
+    margin:.5%;
+    padding:.5%;  
+    border:2px solid red;
+    margin:10px 15px 10px 10px;
+  }
+
+  .gallery img {
+    width:100%;
+    margin:0;
+    padding:0;  
+  }
+  .gallery figcaption {
+    color:var(--DeepGrey);  
+    padding:2px;
+  }
+  .home{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin:0;
+    padding:0;
+  }
+  .home img{
+    background-color:var(--DarkBlue);
+    width:700px;
+    margin:.5%;
+    padding:.5%;  
+    border:2px solid red;
+    margin:10px 15px 10px 10px;
+  }
+  .counter{
+    display:flex;
+    justify-content:center;
+  }
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {} 
+  h1 {font-family: 'Sedgwick Ave Display', serif;
+      font-size: 300%;}
+  h2 {font-family: 'Cinzel Decorative', serif;
+      font-size:200%}
+  h3 {border-top: 2px solid var(--DeepGrey);
+      border-bottom: 2px solid var(--DeepGrey);
+      padding:1%}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {}
+  caption {}
+  thead {}
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {}
+  th {}
+  td {}
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {}
+  fieldset {}
+    legend {}
+  label {}
+  button {}
+  input {}
+  select {}
+    optgroup {}
+    option {}
+  textarea {}
+  output {}
+  meter {}
+  progress {}
+  
+  
+  /* ----- Media ----- */
+  /*figure {border:5px solid var(--SkyGrey);
+    border-radius:10px 10px 10px 10px;
+    margin-left:auto;margin-right:auto;}
+    figcaption {text-align: left}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  
+
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  
